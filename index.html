@@ -1,10 +1,90 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Site de tatuagem Cero</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cero Tattoo | Tatuagens Geek e Anime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: linear-gradient(90deg, #ff004c, #6c00ff);
+      color: #fff;
+      animation: slideDown 1s ease;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin: 0.5rem 0;
+    }
+    p {
+      color: #ccc;
+    }
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .buttons a {
+      text-decoration: none;
+      background: #ff004c;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      color: white;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background: #ff3366;
+    }
+    .formulario {
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff004c33;
+    }
+    input, textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      background: #6c00ff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background: #7f2fff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -18,30 +98,30 @@
     fbq('init', '976155004547085');
     fbq('track', 'PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=976155004547085&ev=PageView&noscript=1"/>
-  </noscript>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=976155004547085&ev=PageView&noscript=1"
+  /></noscript>
   <!-- End Meta Pixel Code -->
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #fafafa;
-      color: #222;
-    }
-    h1 {
-      font-size: 2em;
-    }
-    p {
-      font-size: 1.2em;
-    }
-  </style>
 </head>
 <body>
-  <h1>Site de tatuagem Cero</h1>
-  <p>Site Oficial Cero Tattoo</p>
+  <header>
+    <h1>Cero Tattoo</h1>
+    <p>Arte definitiva em estilo anime e geek</p>
+    <div class="buttons">
+      <a href="https://wa.me/5541974031305" target="_blank">WhatsApp</a>
+      <a href="https://www.instagram.com/cero.tattoo" target="_blank">Instagram</a>
+    </div>
+  </header>  <section class="formulario">
+    <h2>Agende sua tattoo</h2>
+    <form action="mailto:cerorattoo95@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="text" name="whatsapp" placeholder="WhatsApp">
+      <textarea name="mensagem" rows="4" placeholder="Descreva sua ideia de tatuagem..."></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>  <footer>
+    &copy; 2025 Cero Tattoo. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
